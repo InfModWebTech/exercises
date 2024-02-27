@@ -5,29 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercises</title>
     <style>
+        h1 {
+            font-size: 2em;
+            color: aliceblue;
+            text-shadow: black 0 -3px
+        }
+
+        h2 {
+            color: aliceblue;
+            text-shadow: black 0 -3px
+        }
+
+        header {
+            font-size: large;
+            
+        }
         body { 
             font-family: "Palatino Linotype";
-            background-color: whitesmoke
+            font-size: 1em;
+            background-image: url(sfondofiori.jpg)
         }
 
         #exercises_list {
-            border: 0.5em solid black;
+            border: 0.5em solid pink;
             border-radius: 5em;
             text-align: left;
             line-height: 1.5em;
-            
             background-color: cornsilk;
         }
 
         #gatto {
-            position:relative;
-            border: 0.5em solid black;
+            position: fixed;
+            top: 4em;
+            right: -1em;
+            transform: rotate(20deg);
             
+        }
+
+        
+
+        #foot_container {
+            bottom: 0;
+            background-color: cornsilk;
+            border-radius: 5em;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
 
     </style>
 <body>
-    <header align="center">
+    <header align="center" style="text-shadow: 2px 1 #d11111, -2px">
         <h1>Information Modelling and Web Technologies</h1>
         <h2>Exercises</h2>
     </header>
@@ -39,7 +67,11 @@
 
         </ul>
     </div>
-    <div id="gatto"> 
-        <img src="gatooo.webp">
-    </div>
+    <img id="gatto" src="gatooo.webp">
+    <footer>
+        <div class="foot_container">
+            <p> 2024 Pietro Tisci. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+</html>
