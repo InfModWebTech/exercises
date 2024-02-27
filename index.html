@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercises</title>
     <style>
+
         h1 {
             font-size: 2em;
-            color: aliceblue;
+            color: hsl(208, 100%, 97%);
             text-shadow: black 0 -3px
         }
 
@@ -16,18 +17,28 @@
             text-shadow: black 0 -3px
         }
 
-        header {
+        #header {
             font-size: large;
             
         }
         body { 
             font-family: "Palatino Linotype";
-            font-size: 1em;
             background-image: url(sfondofiori.jpg)
         }
+        
+        /*
+        @media screen {
+            body { 
+            font-family: "Palatino Linotype";
+            background-image: url(sfondofiori.jpg);
+            margin-left: 10em;
+            margin-right: 10em;
+            }
+        }
+        */
 
         #exercises_list {
-            border: 0.5em solid pink;
+            border: 0.5em solid #ffc0cb;
             border-radius: 5em;
             text-align: left;
             line-height: 1.5em;
@@ -35,43 +46,43 @@
         }
 
         #gatto {
-            position: fixed;
-            top: 4em;
-            right: -1em;
+            position: relative;
+            float: right;
+            top: -7em;
+            right:-4em;
             transform: rotate(20deg);
             
         }
 
-        
-
-        #foot_container {
-            bottom: 0;
+        #footer {
             background-color: cornsilk;
+            border: 0.5em solid #ffc0cb;
             border-radius: 5em;
-            color: #fff;
             text-align: center;
-            padding: 20px 0;
+            position: absolute;
+            top: 90%;
+            width: 98%;
         }
 
     </style>
 <body>
-    <header align="center" style="text-shadow: 2px 1 #d11111, -2px">
-        <h1>Information Modelling and Web Technologies</h1>
-        <h2>Exercises</h2>
-    </header>
-    <div id="exercises_list">
-        <ul>
-            <li>
-                <a href="Ex_forms/index.html">Exercises on forms</a>
-            </li>
-
-        </ul>
-    </div>
-    <img id="gatto" src="gatooo.webp">
-    <footer>
-        <div class="foot_container">
-            <p> 2024 Pietro Tisci. All rights reserved.</p>
+    <div id="content">
+        <div id="header" align="center" style="text-shadow: 2px 1 #d11111, -2px">
+            <h1>Information Modelling and Web Technologies</h1>
+            <h2>Exercises</h2>
         </div>
-    </footer>
+        <div id="exercises_list">
+            <ul>
+                <li>
+                    <a href="Ex_forms/index.html">Exercises on forms</a>
+                </li>
+            </ul>
+        </div>
+        <img id="gatto" src="gatooo.webp">
+        <div id="footer">
+            <h4>Pietro Tisci. All rights reserved.</h4>
+            <p>Institutional email: pietro.tisci@studio.unibo.it</p>
+        </div>
+    </div>
 </body>
 </html>
