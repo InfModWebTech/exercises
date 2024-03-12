@@ -3,14 +3,14 @@ function set() {
     document.getElementById('s1').innerHTML = string;
 }
 
-function checkDate() {
+function checkdate() {
     var date1 = document.getElementById('date1').value;
     var date2 = document.getElementById('date2').value;
-    if (date1==''||date2=='') {
-        alert('Attention! None of the dates can be empty. Please enter the dates.');
-    }   else if (date1==date2) {
-            alert('Attention! The two dates can\'t be the same. Please change them.');
-    }   else {
-            alert('Well done!')
+    if (date1==date2){
+        alert ('they have to be different')
+    } else {
+        alert ('guds')
     }
 }
+
+
