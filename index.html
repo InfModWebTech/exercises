@@ -1,91 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercises</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercises</title>
+        <style>
 
-        h1 {
-            font-size: 2em;
-            color: hsl(208, 100%, 97%);
-            text-shadow: black 0 -3px
-        }
-
-        h2 {
-            color: aliceblue;
-            text-shadow: black 0 -3px
-        }
-
-        #header {
-            font-size: large;
-            
-        }
-        body { 
-            font-family: "Palatino Linotype";
-            background-image: url(index_img/sfondofiori.jpg)
-        }
-        
-        /*
-        @media screen {
-            body { 
-            font-family: "Palatino Linotype";
-            background-image: url(sfondofiori.jpg);
-            margin-left: 10em;
-            margin-right: 10em;
+            h1 {
+                font-size: 2em;
+                color: hsl(208, 100%, 97%);
+                text-shadow: black 0 -3px
             }
-        }
-        */
 
-        #exercises_list {
-            border: 0.5em solid #ffc0cb;
-            border-radius: 5em;
-            text-align: left;
-            line-height: 1.5em;
-            background-color: cornsilk;
-        }
+            h2 {
+                color: aliceblue;
+                text-shadow: black 0 -3px
+            }
 
-        #gatto {
-            position: relative;
-            float: right;
-            top: -7em;
-            right:-4em;
-            transform: rotate(20deg);
+            #header {
+                font-size: large;
+                
+            }
+            body { 
+                font-family: "Palatino Linotype";
+                background-image: url(index_img/sfondofiori.jpg)
+            }
             
-        }
+            /*
+            @media screen {
+                body { 
+                font-family: "Palatino Linotype";
+                background-image: url(sfondofiori.jpg);
+                margin-left: 10em;
+                margin-right: 10em;
+                }
+            }
+            */
 
-        #footer {
-            background-color: cornsilk;
-            border: 0.5em solid #ffc0cb;
-            border-radius: 5em;
-            text-align: center;
-            position: absolute;
-            top: 90%;
-            width: 98%;
-        }
+            #exercises_list {
+                border: 0.5em solid #ffc0cb;
+                border-radius: 5em;
+                text-align: left;
+                line-height: 1.5em;
+                background-color: cornsilk;
+            }
 
-    </style>
-<body>
-    <div id="content">
-        <div id="header" align="center" style="text-shadow: 2px 1 #d11111, -2px">
-            <h1>Information Modelling and Web Technologies</h1>
-            <h2>Exercises</h2>
+            #gatto {
+                position: relative;
+                float: right;
+                top: -7em;
+                right:-4em;
+                transform: rotate(20deg);
+                
+            }
+
+            #footer {
+                position: fixed;
+                background-color: cornsilk;
+                border: 0.5em solid #ffc0cb;
+                border-radius: 5em;
+                text-align: center;
+                bottom: 0;
+                width: 98%;
+                height: 5em;
+            }
+
+        </style>
+    </head>
+    <body onload="alert('Welcome!!!')">
+        <div id="content">
+            <div id="header" align="center" style="text-shadow: 2px 1 #d11111, -2px">
+                <h1>Information Modelling and Web Technologies</h1>
+                <h2>Exercises</h2>
+            </div>
+            <div id="exercises_list">
+                <ul>
+                    <li>
+                        <a href="Ex_forms/index.html">Exercise on forms</a>
+                    </li>
+                    <li>
+                        <a href="tropical/index.html">Exercise on bootstrap</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="gatto"><img  src="index_img/gatooo.webp"></div>
+            <div id="footer">
+                <p>Pietro Tisci. All rights reserved.</p>
+                <p>Institutional email: pietro.tisci@studio.unibo.it</p>
+            </div>
         </div>
-        <div id="exercises_list">
-            <ul>
-                <li>
-                    <a href="Ex_forms/index.html">Exercises on forms</a>
-                </li>
-                <li>
-                    <a href="tropical/index.html">Exercise bootstrap</a>
-                </li>
-            </ul>
-        </div>
-        <img id="gatto" src="index_img/gatooo.webp">
-        <div id="footer">
-            <h4>Pietro Tisci. All rights reserved.</h4>
-            <p>Institutional email: pietro.tisci@studio.unibo.it</p>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
