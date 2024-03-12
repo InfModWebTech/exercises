@@ -1,4 +1,4 @@
-function set() {
+function reset() {
     var string = document.getElementById('input1').value;
     document.getElementById('s1').innerHTML = string;
 }

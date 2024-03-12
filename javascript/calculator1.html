@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title>Javascript calculator 1.0</title>
+        <script type="text/javascript" src="exercise.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>
+            Javascript calculator 1.0
+        </h1>
+        <p> i clicked <span id="s1">0</span> times </p>
+        <p>
+            <button onclick = "
+                    var n = parseInt(document.getElementById('s1').innerHTML);
+                    document.getElementById('s1').innerHTML = n+1;
+                "
+            >add</button>
+        </p>
+        <p>
+            <button onclick = "
+                    var n = parseInt(document.getElementById('s1').innerHTML);
+                    document.getElementById('s1').innerHTML = 0;
+                "
+            >reset</button>
+        </p>
+    </body>
+</html>
